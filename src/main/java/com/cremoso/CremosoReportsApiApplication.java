@@ -13,6 +13,4 @@ public class CremosoReportsApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CremosoReportsApiApplication.class, args);
 	}
-	
-
 }
