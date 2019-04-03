@@ -3,11 +3,7 @@ package com.cremoso.model;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 import lombok.Data;
 
@@ -16,7 +12,7 @@ public @Data class Script extends EntityBase {
 	private String name;
 	private String description;
 
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<Command> commands = new HashSet<>();
 
 	@ManyToMany(cascade = CascadeType.ALL)

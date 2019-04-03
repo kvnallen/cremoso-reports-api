@@ -17,8 +17,6 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-//@Getter(AccessLevel.PROTECTED)
-//@Setter(AccessLevel.PROTECTED)
 @MappedSuperclass
 public @Data class EntityBase {
 

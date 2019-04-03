@@ -21,7 +21,6 @@ public class RoleResource {
 	
 	@GetMapping
 	public List<Role> getAll(){
-		roleRepository.saveAndFlush(new Role());
 		return roleRepository.findAll(); 
 	}
 	
